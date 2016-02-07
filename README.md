@@ -4,7 +4,7 @@ This is an implementation of a library which allows you to communicate
 with your OPNsense appliance.
 
 How can this library be used?
-=============================
+-----------------------------
 
 ``` ruby
 require_relative 'relative/path/to/this/library/requireall'
