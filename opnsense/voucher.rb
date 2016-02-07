@@ -2,14 +2,6 @@ require 'uri'
 
 module OPNsense
   class Voucher
-    attr_accessor
-    def initialize
-      @new_packages = []
-      @reinstall_packages = []
-      @upgrade_packages = []
-    end
-
-
     class << self
       def list_providers
         request = OPNsense::Configuration.instance['request']
