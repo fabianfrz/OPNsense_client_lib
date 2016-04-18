@@ -37,6 +37,11 @@ module OPNsense
             [key.to_i, value]
           end.to_h
         end
+
+        def timeserie
+          request = OPNsense::Configuration.instance['request']
+          request.get_request("diagnostics/networkinsight/timeserie")
+        end
       end
     end
   end
